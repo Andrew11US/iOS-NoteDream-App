@@ -16,6 +16,9 @@ class ItemDetailsVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSou
     @IBOutlet weak var PriceField: CustomTextField!
     @IBOutlet weak var detailsField: CustomTextField!
     
+    @IBOutlet weak var backgroundImageSecondView: UIImageView!
+    
+    
     @IBOutlet weak var thumgImg: UIImageView!
     var stores = [Store]()
     var itemToEdit: Item?
@@ -26,6 +29,7 @@ class ItemDetailsVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSou
         
         if let topItem = self.navigationController?.navigationBar.topItem {
             topItem.backBarButtonItem = UIBarButtonItem(title: "", style: UIBarButtonItemStyle.plain, target: nil, action: nil)
+
         }
         
         storePicker.delegate = self

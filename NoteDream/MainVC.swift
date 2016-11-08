@@ -14,6 +14,10 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource, NSFe
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var segment: UISegmentedControl!
     
+    @IBOutlet weak var backgroundImage: UIImageView!
+    
+    
+    
     var controller: NSFetchedResultsController<Item>!
     
     override func viewDidLoad() {

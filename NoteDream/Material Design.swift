@@ -8,7 +8,6 @@
 
 import UIKit
 
-
 private var materialKey = false
 
 extension UIView {

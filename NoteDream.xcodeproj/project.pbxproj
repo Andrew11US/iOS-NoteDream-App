@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9038C0841DD7962A00CE732F /* ItemDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9038C0831DD7962A00CE732F /* ItemDetailsVC.swift */; };
+		9038C0861DD79A6D00CE732F /* RoundedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9038C0851DD79A6D00CE732F /* RoundedView.swift */; };
+		9038C08C1DD7A7AE00CE732F /* RoundedImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9038C08B1DD7A7AE00CE732F /* RoundedImage.swift */; };
 		90F54A931DD2635F00DD0641 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F54A921DD2635F00DD0641 /* AppDelegate.swift */; };
 		90F54A951DD2635F00DD0641 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F54A941DD2635F00DD0641 /* MainVC.swift */; };
 		90F54A9B1DD2635F00DD0641 /* NoteDream.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 90F54A991DD2635F00DD0641 /* NoteDream.xcdatamodeld */; };
@@ -16,7 +19,6 @@
 		90F54AB21DD2663F00DD0641 /* Material Design.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F54AB11DD2663F00DD0641 /* Material Design.swift */; };
 		90F54AB41DD266A000DD0641 /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F54AB31DD266A000DD0641 /* ItemCell.swift */; };
 		90F54AB61DD2672E00DD0641 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F54AB51DD2672E00DD0641 /* CustomTextField.swift */; };
-		90F54AB81DD267C700DD0641 /* ItemDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F54AB71DD267C700DD0641 /* ItemDetailsVC.swift */; };
 		90F54AC11DD26B5300DD0641 /* Image+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F54AB91DD26B5300DD0641 /* Image+CoreDataClass.swift */; };
 		90F54AC21DD26B5300DD0641 /* Image+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F54ABA1DD26B5300DD0641 /* Image+CoreDataProperties.swift */; };
 		90F54AC31DD26B5300DD0641 /* Store+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F54ABB1DD26B5300DD0641 /* Store+CoreDataClass.swift */; };
@@ -26,10 +28,12 @@
 		90F54AC71DD26B5300DD0641 /* ItemType+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F54ABF1DD26B5300DD0641 /* ItemType+CoreDataClass.swift */; };
 		90F54AC81DD26B5300DD0641 /* ItemType+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F54AC01DD26B5300DD0641 /* ItemType+CoreDataProperties.swift */; };
 		90F54ACB1DD28BE100DD0641 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F54ACA1DD28BE100DD0641 /* RoundedButton.swift */; };
-		90F54ACE1DD28D2800DD0641 /* RoundedTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F54ACD1DD28D2800DD0641 /* RoundedTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9038C0831DD7962A00CE732F /* ItemDetailsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemDetailsVC.swift; sourceTree = "<group>"; };
+		9038C0851DD79A6D00CE732F /* RoundedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedView.swift; sourceTree = "<group>"; };
+		9038C08B1DD7A7AE00CE732F /* RoundedImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedImage.swift; sourceTree = "<group>"; };
 		90F54A8F1DD2635F00DD0641 /* NoteDream.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NoteDream.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		90F54A921DD2635F00DD0641 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		90F54A941DD2635F00DD0641 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
@@ -41,7 +45,6 @@
 		90F54AB11DD2663F00DD0641 /* Material Design.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Material Design.swift"; sourceTree = "<group>"; };
 		90F54AB31DD266A000DD0641 /* ItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
 		90F54AB51DD2672E00DD0641 /* CustomTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
-		90F54AB71DD267C700DD0641 /* ItemDetailsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemDetailsVC.swift; sourceTree = "<group>"; };
 		90F54AB91DD26B5300DD0641 /* Image+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Image+CoreDataClass.swift"; path = "../Image+CoreDataClass.swift"; sourceTree = "<group>"; };
 		90F54ABA1DD26B5300DD0641 /* Image+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Image+CoreDataProperties.swift"; path = "../Image+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		90F54ABB1DD26B5300DD0641 /* Store+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Store+CoreDataClass.swift"; path = "../Store+CoreDataClass.swift"; sourceTree = "<group>"; };
@@ -51,7 +54,6 @@
 		90F54ABF1DD26B5300DD0641 /* ItemType+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "ItemType+CoreDataClass.swift"; path = "../ItemType+CoreDataClass.swift"; sourceTree = "<group>"; };
 		90F54AC01DD26B5300DD0641 /* ItemType+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "ItemType+CoreDataProperties.swift"; path = "../ItemType+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		90F54ACA1DD28BE100DD0641 /* RoundedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
-		90F54ACD1DD28D2800DD0641 /* RoundedTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,7 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				90F54A941DD2635F00DD0641 /* MainVC.swift */,
-				90F54AB71DD267C700DD0641 /* ItemDetailsVC.swift */,
+				9038C0831DD7962A00CE732F /* ItemDetailsVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -130,10 +132,11 @@
 				90F54AB31DD266A000DD0641 /* ItemCell.swift */,
 				90F54AB51DD2672E00DD0641 /* CustomTextField.swift */,
 				90F54A921DD2635F00DD0641 /* AppDelegate.swift */,
-				90F54AA11DD2635F00DD0641 /* Info.plist */,
 				90F54A991DD2635F00DD0641 /* NoteDream.xcdatamodeld */,
 				90F54ACA1DD28BE100DD0641 /* RoundedButton.swift */,
-				90F54ACD1DD28D2800DD0641 /* RoundedTextField.swift */,
+				9038C0851DD79A6D00CE732F /* RoundedView.swift */,
+				90F54AA11DD2635F00DD0641 /* Info.plist */,
+				9038C08B1DD7A7AE00CE732F /* RoundedImage.swift */,
 			);
 			name = Services;
 			sourceTree = "<group>";
@@ -222,17 +225,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9038C0861DD79A6D00CE732F /* RoundedView.swift in Sources */,
 				90F54AC61DD26B5300DD0641 /* Item+CoreDataProperties.swift in Sources */,
-				90F54ACE1DD28D2800DD0641 /* RoundedTextField.swift in Sources */,
 				90F54AC11DD26B5300DD0641 /* Image+CoreDataClass.swift in Sources */,
 				90F54AC41DD26B5300DD0641 /* Store+CoreDataProperties.swift in Sources */,
 				90F54AC21DD26B5300DD0641 /* Image+CoreDataProperties.swift in Sources */,
 				90F54AB61DD2672E00DD0641 /* CustomTextField.swift in Sources */,
 				90F54AC51DD26B5300DD0641 /* Item+CoreDataClass.swift in Sources */,
 				90F54A951DD2635F00DD0641 /* MainVC.swift in Sources */,
+				9038C0841DD7962A00CE732F /* ItemDetailsVC.swift in Sources */,
 				90F54AC81DD26B5300DD0641 /* ItemType+CoreDataProperties.swift in Sources */,
 				90F54AB41DD266A000DD0641 /* ItemCell.swift in Sources */,
-				90F54AB81DD267C700DD0641 /* ItemDetailsVC.swift in Sources */,
+				9038C08C1DD7A7AE00CE732F /* RoundedImage.swift in Sources */,
 				90F54A9B1DD2635F00DD0641 /* NoteDream.xcdatamodeld in Sources */,
 				90F54ACB1DD28BE100DD0641 /* RoundedButton.swift in Sources */,
 				90F54A931DD2635F00DD0641 /* AppDelegate.swift in Sources */,

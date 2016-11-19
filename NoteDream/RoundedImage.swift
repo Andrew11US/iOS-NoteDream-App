@@ -1,19 +1,17 @@
 //
-//  RoundedTextField.swift
+//  RoundedImage.swift
 //  NoteDream
 //
-//  Created by Andrew Foster on 11/8/16.
+//  Created by Andrew Foster on 11/12/16.
 //  Copyright © 2016 Andrii Halabuda. All rights reserved.
 //
 
 import UIKit
 
-class RoundedTextField: UITextField {
+class RoundedImage: UIImageView {
 
     override func awakeFromNib() {
-        
         layer.cornerRadius = 3.0
-        
     }
 
 }

@@ -9,14 +9,11 @@
 import UIKit
 import CoreData
 
-class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource, NSFetchedResultsControllerDelegate {
+class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource, NSFetchedResultsControllerDelegate, UITextFieldDelegate {
 
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var segment: UISegmentedControl!
-    
     @IBOutlet weak var backgroundImage: UIImageView!
-    
-    
     
     var controller: NSFetchedResultsController<Item>!
     
@@ -26,11 +23,26 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource, NSFe
         tableView.delegate = self
         tableView.dataSource = self
         
-        //generateTestData()
+        // Generate Data
+        //generateData()
+
         attemptFetch()
         
     }
+    // Dismiss Keyboard
     
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
+    
+    func textFieldShouldReturn(_ titleField: UITextField) -> Bool {
+        
+        titleField.resignFirstResponder()
+        return true
+        
+    }
+    
+    // Setting up Table View
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "ItemCell", for: indexPath) as! ItemCell
@@ -45,12 +57,14 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource, NSFe
         
     }
     
+    // Perform segue if cell tapped
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         if let objs = controller.fetchedObjects , objs.count > 0 {
             
             let item = objs[indexPath.row]
             performSegue(withIdentifier: "ItemDetailsVC", sender: item)
+            
         }
     }
     
@@ -177,22 +191,12 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource, NSFe
         }
     }
     
-    func generateTestData() {
+    func generateData() {
         
         let item = Item(context: context)
-        item.title = "MacBook Pro"
-        item.price = 1800
-        item.details = "I can't wait until the September event, I hope they release new MPBs"
-        
-        let item2 = Item(context: context)
-        item2.title = "Bose Headphones"
-        item2.price = 300
-        item2.details = "But man, its so nice to be able to blaock out everyone with the noise canceling tech."
-        
-        let item3 = Item(context: context)
-        item3.title = "Tesla Model S"
-        item3.price = 110000
-        item3.details = "Oh man this is a beautiful car. And one day, I willl own it"
+        item.title = "iPhone 7"
+        item.price = 1000
+        item.details = "I can't wait to buy it"
         
         ad.saveContext()
         
